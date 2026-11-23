@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Sample lead",
+    "company": "Basecamp",
+    "website": "https://basecamp.com",
+    "what_they_do": "Project management software that keeps tasks, discussions, files and deadlines for a team in one place. Basecamp 5 was released in 2026.",
+    "audience": "Small and medium businesses in every industry, from woodworkers and event planners to marketers and educators.",
+    "team_size_guess": "medium",
+    "manual_work_signals": [
+      "Client onboarding, which appears in their own example projects",
+      "Customer support, also listed as an example project",
+      "Turning project updates into reports, like the annual report example"
+    ],
+    "fit_score": 3,
+    "pitch_angle": "Your homepage lists 'Streamlining client onboarding' as a Basecamp project, and that is exactly the kind of flow I automate end to end for small teams that use Basecamp."
+  },
+  {
+    "name": "Sample lead",
+    "company": "Calendly",
+    "website": "https://calendly.com",
+    "what_they_do": "Meeting scheduling platform with an AI assistant (Callie), a notetaker for recaps, contacts and built-in payments.",
+    "audience": "Individuals, small businesses and large companies, especially sales, marketing, customer success and recruiting teams.",
+    "team_size_guess": "large",
+    "manual_work_signals": [
+      "Follow-up emails after meetings, which the site says they now pre-draft",
+      "Sending invoices and collecting deposits for meetings",
+      "Prepping for calls by reviewing client contact history"
+    ],
+    "fit_score": 2,
+    "pitch_angle": "Callie and the Notetaker already cover the work around meetings, so the fit for me is not Calendly itself but the small businesses that book through it and still copy every recap into their CRM by hand."
+  },
+  {
+    "name": "Sample lead",
+    "company": "Typeform",
+    "website": "https://www.typeform.com",
+    "what_they_do": "Form, survey and quiz builder with AI, plus automated workflows (Growth Flow) and AI-moderated research (Research Flow). It also connects to AI assistants through MCP.",
+    "audience": "Marketing, product, HR and customer success teams, from individuals to enterprise.",
+    "team_size_guess": "large",
+    "manual_work_signals": [
+      "Following up with leads after a form is submitted",
+      "Segmenting customers from form answers",
+      "Writing research reports from survey results"
+    ],
+    "fit_score": 2,
+    "pitch_angle": "With 48 million responses collected every month, most Typeform users still decide by hand what happens after someone hits submit, and that is the step I automate for small businesses."
+  }
+]

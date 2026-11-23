@@ -1,0 +1,5 @@
+anthropic>=2.13,<3
+pydantic>=2,<3
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+fpdf2>=2.7,<3

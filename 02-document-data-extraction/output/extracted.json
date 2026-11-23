@@ -1,0 +1,95 @@
+[
+  {
+    "file": "invoice-luz-design.pdf",
+    "document_type": "invoice",
+    "issuer": "Luz Design Studio",
+    "document_number": "LD-2026-087",
+    "issue_date": "2026-11-03",
+    "due_date": "2026-12-03",
+    "currency": "EUR",
+    "subtotal": "1320.00",
+    "tax": "303.60",
+    "total": 1623.6,
+    "line_items": [
+      {
+        "description": "Brand identity package",
+        "quantity": 1.0,
+        "unit_price": 950.0,
+        "amount": 950.0
+      },
+      {
+        "description": "Social media templates (10)",
+        "quantity": 1.0,
+        "unit_price": 250.0,
+        "amount": 250.0
+      },
+      {
+        "description": "Extra revision round",
+        "quantity": 2.0,
+        "unit_price": 60.0,
+        "amount": 120.0
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "file": "invoice-nuvem-hosting.pdf",
+    "document_type": "invoice",
+    "issuer": "Nuvem Hosting Ltd.",
+    "document_number": "NH-55021",
+    "issue_date": "2026-11-01",
+    "due_date": "",
+    "currency": "USD",
+    "subtotal": "",
+    "tax": "",
+    "total": 39.9,
+    "line_items": [
+      {
+        "description": "Business hosting plan, November 2026",
+        "quantity": 1.0,
+        "unit_price": 24.9,
+        "amount": 24.9
+      },
+      {
+        "description": "Domain renewal anacosta.example",
+        "quantity": 1.0,
+        "unit_price": 15.0,
+        "amount": 15.0
+      }
+    ],
+    "confidence": "high"
+  },
+  {
+    "file": "receipt-cafe-central.pdf",
+    "document_type": "receipt",
+    "issuer": "Cafe Central",
+    "document_number": "00412",
+    "issue_date": "2026-11-18",
+    "due_date": "",
+    "currency": "EUR",
+    "subtotal": "",
+    "tax": "0.62",
+    "total": 11.0,
+    "line_items": [
+      {
+        "description": "Cappuccino",
+        "quantity": 2.0,
+        "unit_price": 2.8,
+        "amount": 5.6
+      },
+      {
+        "description": "Croissant",
+        "quantity": 1.0,
+        "unit_price": 1.9,
+        "amount": 1.9
+      },
+      {
+        "description": "Orange juice",
+        "quantity": 1.0,
+        "unit_price": 3.5,
+        "amount": 3.5
+      }
+    ],
+    "confidence": "high"
+  }
+]

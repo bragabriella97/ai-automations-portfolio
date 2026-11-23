@@ -1,0 +1,90 @@
+[
+  {
+    "id": "e1",
+    "from": "laura.mendes@studiolume.com",
+    "subject": "Can we move Thursday's session?",
+    "body": "Hi Ana! Something came up with my daughter's school on Thursday. Could we move our coaching session to Friday morning, or any time next Monday? Sorry for the short notice. Laura",
+    "category": "reply_needed",
+    "priority": "high",
+    "summary": "Laura needs to move Thursday's coaching session because of a family matter and suggests Friday morning or next Monday.",
+    "next_step": "Check the calendar for Friday morning or Monday and confirm a new time with Laura.",
+    "draft_reply": "Hi Laura,\n\nNo problem at all, family comes first. Let me check my calendar for Friday morning and next Monday, and I'll send you two options today so you can pick the one that works best.\n\nTalk soon,\nAna"
+  },
+  {
+    "id": "e3",
+    "from": "billing@cloudhost.com",
+    "subject": "Payment failed for your subscription",
+    "body": "We could not charge your card ending in 4421 for your Business plan. Please update your payment method within 5 days to avoid interruption of your website.",
+    "category": "action_needed",
+    "priority": "high",
+    "summary": "The website hosting payment failed on the card ending in 4421. The site may go offline in 5 days.",
+    "next_step": "Update the payment method in the hosting account within 5 days.",
+    "draft_reply": ""
+  },
+  {
+    "id": "e4",
+    "from": "sofia.ricci@gmail.com",
+    "subject": "Question about the group program",
+    "body": "Hello, I saw your post about the 6 week program for founders. Is there still a spot in the January group? And do you offer payment in two parts? Thank you, Sofia",
+    "category": "reply_needed",
+    "priority": "high",
+    "summary": "Sofia, a potential client, asks if there is a spot in the January group program and whether payment can be split in two.",
+    "next_step": "Check January availability and the payment plan options, then answer Sofia.",
+    "draft_reply": "Hi Sofia,\n\nThank you so much for reaching out, I'm happy the program caught your eye! Let me check the spots left in the January group and the payment options, and I'll get back to you with the details in the next day or two.\n\nWarmly,\nAna"
+  },
+  {
+    "id": "e6",
+    "from": "marta@printhouse.pt",
+    "subject": "Proof for your new business cards",
+    "body": "Hi Ana, attached is the final proof for the business cards. If everything looks right just reply OK and we print tomorrow. Delivery in 3 working days. Marta",
+    "category": "reply_needed",
+    "priority": "medium",
+    "summary": "The print house sent the final proof of the new business cards. They print tomorrow once Ana replies OK.",
+    "next_step": "Open the attached proof, check every detail, then reply to Marta.",
+    "draft_reply": "Hi Marta,\n\nThank you for the proof! I'm going to look at it carefully today and I'll reply with my OK or any changes before the end of the day, so we keep tomorrow's print date.\n\nBest,\nAna"
+  },
+  {
+    "id": "e8",
+    "from": "joana.alves@outlook.com",
+    "subject": "Invoice 2026-114",
+    "body": "Hi Ana, just checking: I paid invoice 2026-114 last Friday by bank transfer. Could you confirm you received it? Thanks, Joana",
+    "category": "reply_needed",
+    "priority": "medium",
+    "summary": "Joana says she paid invoice 2026-114 by bank transfer last Friday and asks for confirmation.",
+    "next_step": "Check the bank account for the transfer from Joana, then confirm.",
+    "draft_reply": "Hi Joana,\n\nThank you for letting me know! I'm checking the bank account now and I'll confirm as soon as I see the transfer for invoice 2026-114.\n\nBest,\nAna"
+  },
+  {
+    "id": "e2",
+    "from": "newsletter@growthweekly.io",
+    "subject": "7 trends shaping small business in 2027",
+    "body": "This week: why short video still wins, what AI agents mean for solo founders, and our favourite tools. Read online. Unsubscribe.",
+    "category": "newsletter",
+    "priority": "low",
+    "summary": "Weekly marketing newsletter about small business trends for 2027.",
+    "next_step": "No action. Read later or unsubscribe.",
+    "draft_reply": ""
+  },
+  {
+    "id": "e5",
+    "from": "prize-center@winner-alerts.biz",
+    "subject": "You have been selected!!! Claim your reward",
+    "body": "Congratulations, your email was selected for an exclusive reward of 5,000 USD. Click here and enter your bank details to receive it today.",
+    "category": "spam",
+    "priority": "low",
+    "summary": "Prize scam asking for bank details to claim a 5,000 USD reward.",
+    "next_step": "Do not click. Mark as spam and delete.",
+    "draft_reply": ""
+  },
+  {
+    "id": "e7",
+    "from": "team@calendarapp.com",
+    "subject": "Your weekly summary",
+    "body": "You had 9 meetings this week, 2 more than last week. Your busiest day was Tuesday.",
+    "category": "fyi",
+    "priority": "low",
+    "summary": "Automated calendar summary: 9 meetings this week, Tuesday was the busiest day.",
+    "next_step": "No action needed.",
+    "draft_reply": ""
+  }
+]

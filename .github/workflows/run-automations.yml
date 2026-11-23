@@ -1,0 +1,58 @@
+name: Run automations
+
+# Manual only: add an ANTHROPIC_API_KEY secret, then press "Run workflow" in the Actions tab.
+# To run it every week, add:  schedule: [{cron: "0 8 * * 1"}]
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: run-automations
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: 01 Inbox Zero Agent
+        run: python 01-inbox-zero-agent/run.py
+        continue-on-error: true
+
+      - name: 02 Document Data Extraction
+        run: |
+          python 02-document-data-extraction/make_samples.py
+          python 02-document-data-extraction/run.py
+        continue-on-error: true
+
+      - name: 03 Lead Enrichment
+        run: python 03-lead-enrichment/run.py
+        continue-on-error: true
+
+      - name: 04 Report Builder
+        run: python 04-report-builder/run.py
+        continue-on-error: true
+
+      - name: 05 Content Idea Generator
+        run: python 05-content-idea-generator/run.py
+        continue-on-error: true
+
+      - name: Save results to the repository
+        run: |
+          git config user.name "automation-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "*/output" 02-document-data-extraction/data
+          git diff --cached --quiet || git commit -m "Automation run: $(date -u +%Y-%m-%d)"
+          git push

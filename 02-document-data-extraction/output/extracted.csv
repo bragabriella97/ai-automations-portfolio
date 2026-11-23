@@ -1,0 +1,4 @@
+file,document_type,issuer,document_number,issue_date,due_date,currency,total,confidence
+invoice-luz-design.pdf,invoice,Luz Design Studio,LD-2026-087,2026-11-03,2026-12-03,EUR,1623.6,high
+invoice-nuvem-hosting.pdf,invoice,Nuvem Hosting Ltd.,NH-55021,2026-11-01,,USD,39.9,high
+receipt-cafe-central.pdf,receipt,Cafe Central,00412,2026-11-18,,EUR,11.0,high
