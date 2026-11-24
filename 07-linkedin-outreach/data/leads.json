@@ -1,0 +1,68 @@
+[
+  {
+    "id": "sara-nunes",
+    "name": "Sara Nunes",
+    "title": "Founder",
+    "company": "Sal & Mel Catering",
+    "email": "sara@salemel.example",
+    "about": "Catering for private events and small weddings in Lisbon. Team of 4.",
+    "recent_post": "Another Sunday spent writing quotes. 11 requests this week, each one with different dates, guests and menus. I love the cooking part, the admin part is eating my weekends.",
+    "started_on": "2026-11-10",
+    "connected_on": "2026-11-12",
+    "replies": [
+      {"on": "2026-11-14", "channel": "linkedin", "text": "Haha yes, Sundays are quotes day here. How would that work for a business like mine? Do you have time for a call next week?"}
+    ]
+  },
+  {
+    "id": "helena-duarte",
+    "name": "Helena Duarte",
+    "title": "Owner",
+    "company": "Atelier Helena",
+    "email": "helena@atelierhelena.example",
+    "about": "Made to measure bridal dresses. Appointments only.",
+    "recent_post": "If you sent me a DM in October and I never answered, I'm sorry. Between fittings and the workshop, my inbox is a mess.",
+    "started_on": "2026-11-05",
+    "connected_on": "2026-11-06",
+    "replies": [
+      {"on": "2026-11-13", "channel": "email", "text": "Thank you, but we just hired an assistant to handle messages. Not looking for anything right now."}
+    ]
+  },
+  {
+    "id": "carla-mendes",
+    "name": "Carla Mendes",
+    "title": "CEO",
+    "company": "Pulso Marketing",
+    "email": "carla@pulso.example",
+    "about": "Social media agency for restaurants. 6 people.",
+    "recent_post": "We signed 3 new clients this month. Great news, and also 3 times the same onboarding: contracts, access, briefing forms, kickoff. There has to be a better way.",
+    "started_on": "2026-11-01",
+    "connected_on": "2026-11-03",
+    "replies": [
+      {"on": "2026-11-16", "channel": "linkedin", "text": "Interesting. We do everything in Notion today. Would that still work, or do we need to change tools?"}
+    ]
+  },
+  {
+    "id": "beatriz-lopes",
+    "name": "Beatriz Lopes",
+    "title": "Clinic owner",
+    "company": "Movimento Physio",
+    "email": "beatriz@movimentophysio.example",
+    "about": "Physiotherapy clinic with 3 therapists.",
+    "recent_post": "No-shows cost us more than rent last month. Thinking about charging a deposit for first appointments.",
+    "started_on": "2026-10-20",
+    "connected_on": "2026-10-23",
+    "replies": []
+  },
+  {
+    "id": "joana-pires",
+    "name": "Joana Pires",
+    "title": "Photographer",
+    "company": "Joana Pires Photography",
+    "email": "hello@joanapires.example",
+    "about": "Wedding and family photographer, works alone.",
+    "recent_post": "Delivered 4 galleries this week. Now the part nobody sees: invoices, contracts for next year and 30 unanswered emails.",
+    "started_on": "2026-11-12",
+    "connected_on": "",
+    "replies": []
+  }
+]

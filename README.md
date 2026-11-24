@@ -14,6 +14,7 @@ Every automation here is real, working code. Each one was run on sample data and
 | 04 | [Autonomous Report Builder](04-report-builder) | Messy meeting notes to a client report, pending approval | [reports](04-report-builder/output/pending-approval) |
 | 05 | [Content Idea Generator](05-content-idea-generator) | Scores real founder questions into an idea bank | [ideas](05-content-idea-generator/output/latest.md) |
 | 06 | [Client Lifecycle Engine](06-client-lifecycle) | Proposal, onboarding, deposit invoice and payment reminders | [pipeline](06-client-lifecycle/output/pipeline.md) |
+| 07 | [LinkedIn Outreach Engine](07-linkedin-outreach) | 30 day personalised sequence that stops on a no and alerts on a yes | [campaign](07-linkedin-outreach/output/campaign.md) |
 
 ## How I build
 

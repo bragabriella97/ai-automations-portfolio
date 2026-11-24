@@ -1,0 +1,90 @@
+{
+  "sara-nunes": {
+    "replies": {
+      "2026-11-14": {
+        "intent": "positive",
+        "summary": "Sara recognises the problem, asks how it would work for her catering business and wants a call next week.",
+        "suggested_reply": ""
+      }
+    },
+    "sequence": {
+      "connection_note": "Hi Sara, your post about Sundays full of quotes hit home. 11 requests in a week is a lot of admin for a team of 4. I help women who run small businesses take that kind of work off their plate. Would love to connect.",
+      "message": "Thanks for connecting, Sara! One thing I keep seeing with caterers: most quotes are 80% the same, only dates, guests and menu change. A simple form that turns a request into a draft quote can give you most of your Sunday back. Is that something you have tried?\n\nGabriella",
+      "email_subject": "Your Sunday quotes",
+      "email_body": "Hi Sara,\n\nI saw your post about spending Sundays on quotes. For a catering business the pattern is often the same: the client sends date, guests and menu, and someone rewrites the same quote again.\n\nThat step can be prepared for you, so you only check and send. Happy to show you an example in 15 minutes if it is useful.\n\nGabriella",
+      "follow_up_1": "Sara, a small idea for the busy season: a short request form on your site with date, guests and menu style. Every request arrives complete, so there is no back and forth before the quote. No pressure, just sharing.\n\nGabriella",
+      "follow_up_2_subject": "One idea for busy season",
+      "follow_up_2_body": "Hi Sara,\n\nOne more idea: most caterers already have 3 or 4 menus they quote again and again. If each request is matched to the closest menu, the quote is almost ready before you open it.\n\nIf you want to see how it would look for Sal & Mel, I'm here.\n\nGabriella",
+      "breakup_subject": "Closing the loop",
+      "breakup_body": "Hi Sara,\n\nI don't want to fill your inbox, so this is my last note. If the quotes ever start eating your weekends again, just reply to this email and we can talk.\n\nWishing you a great season!\n\nGabriella"
+    }
+  },
+  "helena-duarte": {
+    "replies": {
+      "2026-11-13": {
+        "intent": "negative",
+        "summary": "Helena hired an assistant to handle messages and is not looking for help right now.",
+        "suggested_reply": ""
+      }
+    },
+    "sequence": {
+      "connection_note": "Hi Helena, I read your post about the October DMs. Between fittings and the workshop, messages pile up fast. I help women who run small businesses keep their inbox under control. Would be happy to connect.",
+      "message": "Thanks for connecting, Helena! For appointment based businesses, most DMs ask the same 3 things: prices, availability and how fittings work. An automatic first answer with your booking link can catch those before they get lost. Does that sound like your inbox?\n\nGabriella",
+      "email_subject": "Your DMs between fittings",
+      "email_body": "Hi Helena,\n\nYour post about unanswered DMs stayed with me. In a bridal atelier every message can be a bride, so losing one hurts.\n\nThere are simple ways to make sure every new message gets a first answer and lands in one list, even on fitting days. Happy to share an example if it helps.\n\nGabriella",
+      "follow_up_1": "Helena, one small thing that helps many ateliers: a saved reply with your booking link and the 3 answers brides ask most. It takes ten minutes to set up and saves a lot of DMs.\n\nGabriella",
+      "follow_up_2_subject": "An idea for wedding season",
+      "follow_up_2_body": "Hi Helena,\n\nBefore wedding season starts, many ateliers set up one place where every enquiry arrives, from Instagram, email or the website. It means no bride waits weeks for an answer.\n\nIf you want to see how it would look for Atelier Helena, just say.\n\nGabriella",
+      "breakup_subject": "My last note",
+      "breakup_body": "Hi Helena,\n\nThis is my last message, I know your inbox is busy enough! If messages ever get out of hand again, reply here and we can talk.\n\nGabriella"
+    }
+  },
+  "carla-mendes": {
+    "replies": {
+      "2026-11-16": {
+        "intent": "question",
+        "summary": "Carla is curious and asks if the onboarding automation can work with Notion, which her agency already uses.",
+        "suggested_reply": "Hi Carla,\n\nGood question! Yes, it can work with Notion. I usually build around the tools a team already uses, so nobody has to learn something new. Changing tools is only worth it when something truly blocks the work.\n\nIf you want, we can look at your onboarding together in a 20 minute call and see what could run on its own. What day works for you?\n\nGabriella"
+      }
+    },
+    "sequence": {
+      "connection_note": "Hi Carla, congrats on the 3 new clients! Your point about doing the same onboarding 3 times is exactly what I work on. I help agencies run by women make that part automatic. Would love to connect.",
+      "message": "Thanks for connecting, Carla! For agencies, onboarding is usually the same 4 steps you listed: contract, access, briefing, kickoff. When one signed contract starts all four, a new client stops costing you a week of admin. How do you run it today?\n\nGabriella",
+      "email_subject": "3 clients, 3 onboardings",
+      "email_body": "Hi Carla,\n\nYour post about onboarding 3 new clients made me smile, it is a good problem to have. The repetitive part (contract, access, briefing form, kickoff) can run on its own once the client signs.\n\nIf it is useful, I can show you how it looks for an agency like Pulso in 15 minutes.\n\nGabriella",
+      "follow_up_1": "Carla, one quick win many agencies start with: the briefing form goes out on its own the minute the contract is signed, and the answers land in the client's folder. No chasing.\n\nGabriella",
+      "follow_up_2_subject": "Onboarding in one day",
+      "follow_up_2_body": "Hi Carla,\n\nWhen the signed contract starts everything that comes after (access, briefing, kickoff invite), onboarding a new client can shrink from a week of back and forth to one day.\n\nHappy to walk you through it if you want.\n\nGabriella",
+      "breakup_subject": "Closing the loop",
+      "breakup_body": "Hi Carla,\n\nLast note from me, I promise. If onboarding ever starts slowing Pulso down, reply here and we can talk.\n\nGabriella"
+    }
+  },
+  "beatriz-lopes": {
+    "replies": {},
+    "sequence": {
+      "connection_note": "Hi Beatriz, your post about no-shows costing more than rent is a real problem for clinics. Deposits for first appointments can help a lot. I help women who run small businesses with this. Would love to connect.",
+      "message": "Thanks for connecting, Beatriz! On no-shows: a small deposit for first appointments works best together with a reminder the day before. Both can run on their own once set up. Have you decided on the deposit yet?\n\nGabriella",
+      "email_subject": "No-shows at Movimento",
+      "email_body": "Hi Beatriz,\n\nI saw your post about no-shows costing more than rent. With 3 therapists, every empty slot adds up fast.\n\nA deposit at booking plus an automatic reminder the day before is usually the simplest fix. Happy to show you how it could work for your clinic.\n\nGabriella",
+      "follow_up_1": "Beatriz, a small tip: a reminder that lets patients confirm or move the appointment with one tap gives you time to fill the slot. Worth testing before charging deposits.\n\nGabriella",
+      "follow_up_2_subject": "One idea for empty slots",
+      "follow_up_2_body": "Hi Beatriz,\n\nWhen a patient cancels, a short waiting list that gets a message automatically can fill the slot the same day. It pairs well with the deposit idea from your post.\n\nIf you want to see it, I'm here.\n\nGabriella",
+      "breakup_subject": "Last note from me",
+      "breakup_body": "Hi Beatriz,\n\nI'll stop here so I don't crowd your inbox. If no-shows are still hurting the clinic later on, reply to this email and we can talk.\n\nAll the best!\n\nGabriella"
+    }
+  },
+  "joana-pires": {
+    "replies": {},
+    "sequence": {
+      "connection_note": "Hi Joana, your post about the part nobody sees (invoices, contracts, 30 emails) is so true for photographers who work alone. I help women who run small businesses with exactly that. Would love to connect.",
+      "message": "Thanks for connecting, Joana! When you work alone, the admin after delivery is the hardest part to keep up with. Contracts and invoices for next year can go out on their own once a couple books. Is that where the time goes?\n\nGabriella",
+      "email_subject": "The part nobody sees",
+      "email_body": "Hi Joana,\n\nI loved your post about the part nobody sees after delivering galleries. Invoices, contracts and emails pile up fast when you do everything yourself.\n\nWhen a couple books, the contract and the first invoice can go out on their own. Happy to show you an example in 15 minutes.\n\nGabriella",
+      "follow_up_1": "Hi Joana, one small idea: a saved set of answers for the questions couples ask most (packages, dates, delivery time) clears many of those 30 emails in minutes. Just sharing in case it helps.\n\nGabriella",
+      "follow_up_2_subject": "Booking season",
+      "follow_up_2_body": "Hi Joana,\n\nWith next year's bookings coming in, it is a good moment to make contracts and deposits run on their own, so each new couple takes minutes instead of an evening.\n\nIf you want to see how, I'm here.\n\nGabriella",
+      "breakup_subject": "Closing the loop",
+      "breakup_body": "Hi Joana,\n\nThis is my last note. If the admin ever gets heavy again, reply here and we can talk.\n\nGood luck with the season!\n\nGabriella"
+    }
+  }
+}
