@@ -1,0 +1,27 @@
+{
+  "bloom-bakery": {
+    "proposal_sent": "2026-11-23"
+  },
+  "maia-yoga": {
+    "onboarded": "2026-11-23",
+    "invoice": {
+      "number": "INV-2026-001",
+      "issued": "2026-11-12",
+      "due": "2026-11-19",
+      "amount": 900.0
+    },
+    "reminders": [
+      "2026-11-23"
+    ]
+  },
+  "lua-ceramics": {
+    "onboarded": "2026-11-23",
+    "invoice": {
+      "number": "INV-2026-002",
+      "issued": "2026-11-05",
+      "due": "2026-11-12",
+      "amount": 450.0
+    },
+    "reminders": []
+  }
+}

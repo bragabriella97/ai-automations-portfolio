@@ -2,7 +2,7 @@
 
 Hi, I'm **Gabriella Braga**, an automation and AI consultant. I build systems that take repetitive work off small teams: email, documents, research, reporting and content.
 
-Every automation here is real, working code. Each one was run on sample data and the results are saved in its `output/` folder, so you can see exactly what it produced. A GitHub Actions workflow runs all five again with one click.
+Every automation here is real, working code. Each one was run on sample data and the results are saved in its `output/` folder, so you can see exactly what it produced. A GitHub Actions workflow runs them all again with one click.
 
 ## Automations
 
@@ -13,6 +13,7 @@ Every automation here is real, working code. Each one was run on sample data and
 | 03 | [Lead Enrichment Intelligence](03-lead-enrichment) | Reads a lead's website and writes a fit score and pitch angle | [enriched](03-lead-enrichment/output/enriched.md) |
 | 04 | [Autonomous Report Builder](04-report-builder) | Messy meeting notes to a client report, pending approval | [reports](04-report-builder/output/pending-approval) |
 | 05 | [Content Idea Generator](05-content-idea-generator) | Scores real founder questions into an idea bank | [ideas](05-content-idea-generator/output/latest.md) |
+| 06 | [Client Lifecycle Engine](06-client-lifecycle) | Proposal, onboarding, deposit invoice and payment reminders | [pipeline](06-client-lifecycle/output/pipeline.md) |
 
 ## How I build
 

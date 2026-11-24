@@ -1,0 +1,38 @@
+[
+  {
+    "id": "bloom-bakery",
+    "company": "Bloom Bakery",
+    "contact": "Rita",
+    "email": "rita@bloombakery.example",
+    "notes": "04-report-builder/data/notes/2026-11-18-bloom-bakery.md",
+    "project": "Order hub and morning delivery list",
+    "price": 1200,
+    "currency": "EUR",
+    "signed_on": "",
+    "paid_on": ""
+  },
+  {
+    "id": "maia-yoga",
+    "company": "Maia Yoga",
+    "contact": "Maia",
+    "email": "maia@maiayoga.example",
+    "notes": "04-report-builder/data/notes/2026-11-20-maia-yoga.md",
+    "project": "Automatic monthly studio report",
+    "price": 1800,
+    "currency": "EUR",
+    "signed_on": "2026-11-12",
+    "paid_on": ""
+  },
+  {
+    "id": "lua-ceramics",
+    "company": "Lua Ceramics",
+    "contact": "Ines",
+    "email": "ines@luaceramics.example",
+    "notes": "06-client-lifecycle/data/notes/2026-10-30-lua-ceramics.md",
+    "project": "Workshop bookings and reminders",
+    "price": 900,
+    "currency": "EUR",
+    "signed_on": "2026-11-05",
+    "paid_on": "2026-11-09"
+  }
+]
