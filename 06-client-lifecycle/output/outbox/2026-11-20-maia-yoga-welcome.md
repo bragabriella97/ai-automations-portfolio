@@ -4,10 +4,10 @@
 
 Hi Maia,
 
-I'm so happy we are doing this together! From now on Joana gets her day back, and the monthly report will arrive in your inbox on the 1st without anyone building it by hand.
+Thank you for today's kickoff, I'm so happy we are doing this together! Soon Joana gets her day back, and the monthly report will arrive in your inbox on the 1st without anyone building it by hand.
 
-Here is how we start:
-- Joana gives me read access to Mindbody and Stripe.
+Here is what comes next:
+- Joana gives me read access to Mindbody and Stripe by Monday.
 - I check how Mindbody exports the data on your plan.
 - You get the first version of the report on December 1st.
 

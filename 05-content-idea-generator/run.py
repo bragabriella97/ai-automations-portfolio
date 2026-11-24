@@ -117,7 +117,7 @@ def main() -> None:
 
     week = date.today().isoformat()
     lines = [
-        f"# Idea bank · week of {week}",
+        f"# Idea bank · {week}",
         "",
         f"_Last run: {run_stamp()} · {len(posts)} real posts read · {len(keep)} kept (score {MIN_SCORE}+)_",
         "",

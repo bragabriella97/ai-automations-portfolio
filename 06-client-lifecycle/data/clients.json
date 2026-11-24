@@ -8,6 +8,7 @@
     "project": "Order hub and morning delivery list",
     "price": 1200,
     "currency": "EUR",
+    "met_on": "2026-11-18",
     "signed_on": "",
     "paid_on": ""
   },
@@ -20,8 +21,9 @@
     "project": "Automatic monthly studio report",
     "price": 1800,
     "currency": "EUR",
-    "signed_on": "2026-11-12",
-    "paid_on": ""
+    "met_on": "2026-11-20",
+    "signed_on": "2026-11-20",
+    "paid_on": "2026-11-21"
   },
   {
     "id": "lua-ceramics",
@@ -32,7 +34,8 @@
     "project": "Workshop bookings and reminders",
     "price": 900,
     "currency": "EUR",
+    "met_on": "2026-10-30",
     "signed_on": "2026-11-05",
-    "paid_on": "2026-11-09"
+    "paid_on": ""
   }
 ]

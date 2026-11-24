@@ -9,7 +9,7 @@ DATA = Path(__file__).parent / "data"
 DOCS = {
     "invoice-luz-design.pdf": [
         ("LUZ DESIGN STUDIO", 16),
-        ("Rua das Flores 21, Lisboa · NIF 512 345 678", 9),
+        ("Rua Exemplo 21, Lisboa · NIF 000 000 000 (sample)", 9),
         ("", 6),
         ("INVOICE  N.  LD-2026-087", 13),
         ("Issue date: 3 November 2026      Due date: 3 December 2026", 10),
@@ -25,7 +25,7 @@ DOCS = {
     ],
     "receipt-cafe-central.pdf": [
         ("Cafe Central", 14),
-        ("Av. da Liberdade 100", 9),
+        ("Av. Exemplo 100", 9),
         ("Receipt 00412 - 18/11/2026 10:42", 10),
         ("", 6),
         ("2 Cappuccino     2 x 2.80   5.60", 10),

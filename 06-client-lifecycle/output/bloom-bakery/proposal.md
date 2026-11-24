@@ -1,5 +1,5 @@
 # Bloom Bakery · every order in one place
-**For:** Rita, Bloom Bakery · **From:** Gabriella, AutomationLogics · **Date:** 2026-11-23
+**For:** Rita, Bloom Bakery · **From:** Gabriella, AutomationLogics · **Date:** 2026-11-20
 
 Rita, thank you for the call. Right now your orders arrive from three places and live in a notebook, and last month two of them slipped away, one of them a wedding cake. This proposal is about making sure that never happens again, without asking your customers to change how they talk to you.
 
@@ -32,4 +32,4 @@ First, a mockup of the order sheet and the morning delivery list by next Wednesd
 ## Investment
 - **Total:** 1,200.00 EUR
 - **To start:** 600.00 EUR (50%), the rest on delivery
-- **Valid until:** 2026-12-07
+- **Valid until:** 2026-12-04

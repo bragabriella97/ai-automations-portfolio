@@ -1,4 +1,4 @@
-# Idea bank · week of 2026-11-23
+# Idea bank · 2026-11-23
 
 _Last run: 2026-11-23 23:45 UTC · 21 real posts read · 3 kept (score 7+)_
 

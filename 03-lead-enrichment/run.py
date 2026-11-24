@@ -35,8 +35,9 @@ class Insight(BaseModel):
 
 def page_text(url: str) -> str:
     resp = requests.get(url, timeout=30, headers={"User-Agent": "Mozilla/5.0 (lead-research-demo)"})
+    resp.raise_for_status()
     soup = BeautifulSoup(resp.content, "html.parser")  # bytes, so the page encoding is detected correctly
-    for tag in soup(["script", "style", "noscript", "svg"]):
+    for tag in soup(["script", "style", "noscript", "svg", "nav", "header", "footer"]):
         tag.decompose()
     text = " ".join(soup.get_text(" ").split())
     return text[:MAX_CHARS]
@@ -79,7 +80,8 @@ def main() -> None:
             f"- **What they do:** {r['what_they_do']}",
             f"- **Audience:** {r['audience']}",
             f"- **Team size:** {r['team_size_guess']}",
-            f"- **Manual work:** {', '.join(r['manual_work_signals'])}",
+            "- **Manual work:**",
+            *[f"  - {s}" for s in r["manual_work_signals"]],
             f"- **Pitch angle:** {r['pitch_angle']}",
             "",
         ]

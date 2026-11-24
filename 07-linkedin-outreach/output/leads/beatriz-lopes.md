@@ -7,13 +7,13 @@
 
 Hi Beatriz, your post about no-shows costing more than rent is a real problem for clinics. Deposits for first appointments can help a lot. I help women who run small businesses with this. Would love to connect.
 
+### 2026-10-23 · connected · accepted
 ### 2026-10-23 · message · done · linkedin
 
 Thanks for connecting, Beatriz! On no-shows: a small deposit for first appointments works best together with a reminder the day before. Both can run on their own once set up. Have you decided on the deposit yet?
 
 Gabriella
 
-### 2026-10-23 · connected · accepted
 ### 2026-10-27 · email · done · email
 
 Subject: No-shows at Movimento

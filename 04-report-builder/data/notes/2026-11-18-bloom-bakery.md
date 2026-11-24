@@ -9,5 +9,5 @@ call w/ Rita (Bloom Bakery) 18/11
 - budget: didn't say, "not crazy"
 - Rita sends me: last month's orders (photos of notebook) by friday
 - me: mockup of order sheet + morning delivery list by next wed
-- next call: thu 27/11 10h
+- next call: fri 27/11 10h
 - open: does she need payments online? she said "maybe later"

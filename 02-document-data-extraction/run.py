@@ -17,7 +17,7 @@ from common.claude import DRY_RUN, ask, run_stamp, write  # noqa: E402
 SYSTEM = """You extract data from business documents for a bookkeeping sheet.
 Read only what is printed on the document. Never invent or calculate values that are not there,
 except line item amounts when quantity and unit price are both printed.
-Dates in YYYY-MM-DD. Use an empty string for anything you cannot find.
+Dates in YYYY-MM-DD. Use an empty string (or null for amounts) for anything you cannot find.
 Set confidence to low if the document is blurry, cut or ambiguous."""
 
 
@@ -35,8 +35,8 @@ class Document(BaseModel):
     issue_date: str
     due_date: str
     currency: str
-    subtotal: str
-    tax: str
+    subtotal: float | None
+    tax: float | None
     total: float
     line_items: list[LineItem]
     confidence: Literal["high", "medium", "low"]
@@ -83,7 +83,7 @@ def main() -> None:
     for r in rows:
         lines.append(
             f"| {r['file']} | {r['document_type']} | {r['issuer']} | {r['document_number']} | "
-            f"{r['issue_date']} | {r['total']} {r['currency']} | {r['confidence']} |"
+            f"{r['issue_date']} | {r['total']:,.2f} {r['currency']} | {r['confidence']} |"
         )
     write(out / "extracted.md", "\n".join(lines))
 

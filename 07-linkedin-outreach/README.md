@@ -30,7 +30,7 @@ flowchart LR
 ## Design choices
 
 - **Every touch adds something.** An idea, a small example or a question. Never "just checking in".
-- **Channel rules in code.** No LinkedIn message before the connection is accepted. If she never accepts, LinkedIn touches move to email.
+- **Channel rules in code.** The day 3 message waits for the connection. If she never accepts, the day 14 follow-up switches to email.
 - **A no is final.** Not interested goes to `do-not-contact.json` and the sequence stops that same day.
 - **Humans take over when it matters.** A yes or a question stops the automation, and the answer is a draft for approval.
 - **Nothing is sent or clicked.** Automating LinkedIn breaks its rules, so the engine produces a daily task queue and drafts that a person or an approved tool executes.

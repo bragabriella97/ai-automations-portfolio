@@ -1,5 +1,5 @@
 # Onboarding · Maia Yoga
-Signed on 2026-11-12 · project: Automatic monthly studio report
+Signed on 2026-11-20 · project: Automatic monthly studio report
 
 ## Kickoff agenda
 1. What goes into the report: classes attended, new students, cancellations and revenue per teacher.
@@ -12,8 +12,8 @@ Signed on 2026-11-12 · project: Automatic monthly studio report
 ## Project checklist
 | Task | Owner | Due |
 |---|---|---|
-| Give read access to Mindbody and Stripe | client | 2026-11-16 |
-| Check Mindbody export format and API access | us | 2026-11-18 |
-| Confirm if the report should compare with the previous month | client | 2026-11-19 |
+| Give read access to Mindbody and Stripe | client | 2026-11-23 |
+| Check Mindbody export format and API access | us | 2026-11-25 |
+| Confirm if the report should compare with the previous month | client | 2026-11-25 |
 | Build the first version of the monthly report | us | 2026-12-01 |
 | Review the first report and send feedback | client | 2026-12-03 |

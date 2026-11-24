@@ -7,8 +7,8 @@
     "issue_date": "2026-11-03",
     "due_date": "2026-12-03",
     "currency": "EUR",
-    "subtotal": "1320.00",
-    "tax": "303.60",
+    "subtotal": 1320.0,
+    "tax": 303.6,
     "total": 1623.6,
     "line_items": [
       {
@@ -40,8 +40,8 @@
     "issue_date": "2026-11-01",
     "due_date": "",
     "currency": "USD",
-    "subtotal": "",
-    "tax": "",
+    "subtotal": null,
+    "tax": null,
     "total": 39.9,
     "line_items": [
       {
@@ -67,8 +67,8 @@
     "issue_date": "2026-11-18",
     "due_date": "",
     "currency": "EUR",
-    "subtotal": "",
-    "tax": "0.62",
+    "subtotal": null,
+    "tax": 0.62,
     "total": 11.0,
     "line_items": [
       {

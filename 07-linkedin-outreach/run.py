@@ -102,6 +102,8 @@ def simulate(lead: dict, seq: Sequence, replies: dict) -> dict:
     by_day = {d(r["on"]): r for r in lead["replies"]}
     day = start
     while day <= TODAY and status == "active":
+        if day == connected:
+            events.append((day, "connected", "accepted", ""))
         for offset, step, channel in STEPS:
             if start + timedelta(days=offset) != day:
                 continue
@@ -117,8 +119,6 @@ def simulate(lead: dict, seq: Sequence, replies: dict) -> dict:
                 flag = f" (too long: {len(text)} characters, edit before sending)"
             done = "done" if day < TODAY else "due today"
             events.append((day, step, f"{done} · {channel.rstrip('*')}{flag}", text))
-        if day == connected:
-            events.append((day, "connected", "accepted", ""))
         if day in by_day:
             r, c = by_day[day], replies[by_day[day]["on"]]
             events.append((day, "reply", f"{r['channel']} · {c['intent']}", f"\"{r['text']}\"\n\n{c['summary']}"))
@@ -190,7 +190,7 @@ def main() -> None:
         if res["alert"]:
             alerts.append(f"## 🔥 {lead['name']}, {lead['company']}\n{res['alert']}\n\nStop the sequence and reply yourself: [timeline](leads/{lead['id']}.md)\n")
         if res["status"] == "not interested":
-            dnc.append({"name": lead["name"], "email": lead["email"], "since": max(st["replies"])})
+            dnc.append({"name": lead["name"], "email": lead["email"], "since": max(on for on, c in st["replies"].items() if c["intent"] == "negative")})
 
     board += ["", "## Due today", *(due_today or ["- Nothing due today."]), "", "Hot leads: [alerts.md](alerts.md)"]
     write(OUT / "campaign.md", "\n".join(board))

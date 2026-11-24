@@ -1,49 +1,49 @@
 [
   {
     "id": "e1",
-    "from": "laura.mendes@studiolume.com",
+    "from": "laura@studiolume.example",
     "subject": "Can we move Thursday's session?",
     "body": "Hi Ana! Something came up with my daughter's school on Thursday. Could we move our coaching session to Friday morning, or any time next Monday? Sorry for the short notice. Laura"
   },
   {
     "id": "e2",
-    "from": "newsletter@growthweekly.io",
+    "from": "newsletter@growthweekly.example",
     "subject": "7 trends shaping small business in 2027",
     "body": "This week: why short video still wins, what AI agents mean for solo founders, and our favourite tools. Read online. Unsubscribe."
   },
   {
     "id": "e3",
-    "from": "billing@cloudhost.com",
+    "from": "billing@cloudhost.example",
     "subject": "Payment failed for your subscription",
     "body": "We could not charge your card ending in 4421 for your Business plan. Please update your payment method within 5 days to avoid interruption of your website."
   },
   {
     "id": "e4",
-    "from": "sofia.ricci@gmail.com",
+    "from": "sofia.ricci@mail.example",
     "subject": "Question about the group program",
     "body": "Hello, I saw your post about the 6 week program for founders. Is there still a spot in the January group? And do you offer payment in two parts? Thank you, Sofia"
   },
   {
     "id": "e5",
-    "from": "prize-center@winner-alerts.biz",
+    "from": "prize-center@winner-alerts.example",
     "subject": "You have been selected!!! Claim your reward",
     "body": "Congratulations, your email was selected for an exclusive reward of 5,000 USD. Click here and enter your bank details to receive it today."
   },
   {
     "id": "e6",
-    "from": "marta@printhouse.pt",
+    "from": "marta@printhouse.example",
     "subject": "Proof for your new business cards",
     "body": "Hi Ana, attached is the final proof for the business cards. If everything looks right just reply OK and we print tomorrow. Delivery in 3 working days. Marta"
   },
   {
     "id": "e7",
-    "from": "team@calendarapp.com",
+    "from": "team@calendarapp.example",
     "subject": "Your weekly summary",
     "body": "You had 9 meetings this week, 2 more than last week. Your busiest day was Tuesday."
   },
   {
     "id": "e8",
-    "from": "joana.alves@outlook.com",
+    "from": "joana.alves@mail.example",
     "subject": "Invoice 2026-114",
     "body": "Hi Ana, just checking: I paid invoice 2026-114 last Friday by bank transfer. Could you confirm you received it? Thanks, Joana"
   }

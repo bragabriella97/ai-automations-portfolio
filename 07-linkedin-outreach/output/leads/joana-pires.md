@@ -1,4 +1,4 @@
-# Joana Pires · Joana Pires Photography
+# Joana Pires · Lumen Photo Studio
 
 **Status:** active
 

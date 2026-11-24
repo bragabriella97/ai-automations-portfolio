@@ -1,9 +1,9 @@
 """Client Lifecycle Engine: proposal, onboarding, invoice and payment follow-up, from one client list.
 
 Every run looks at where each client is and does only the next step:
-  lead           -> proposal + cover email
+  lead (met)     -> proposal + cover email
   signed         -> welcome email, kickoff agenda, project checklist, deposit invoice (PDF) + invoice email
-  invoice unpaid -> friendly reminder after 7 days, a second one after 14, then a flag to call
+  invoice unpaid -> friendly reminder the day after it is due, a second one a week later, then a flag to call
   paid           -> nothing to chase
 Dates, amounts and invoice numbers are decided by code. Claude only writes the words.
 Nothing is sent: every email lands in output/outbox/ as a draft for approval.
@@ -28,7 +28,7 @@ STUDIO = "AutomationLogics"
 SENDER = "Gabriella"
 DEPOSIT = 0.5           # 50% to start, 50% on delivery
 PAYMENT_TERMS_DAYS = 7  # invoice due one week after it is issued
-REMINDER_DAYS = (7, 14) # reminders this many days after the invoice, then a call
+REMINDER_DAYS = (1, 8)  # reminders this many days after the due date, then a call
 PROPOSAL_VALID_DAYS = 14
 
 TODAY = date.fromisoformat(os.getenv("TODAY") or date.today().isoformat())
@@ -88,6 +88,11 @@ class Email(BaseModel):
     body: str
 
 
+def happened(s: str) -> date | None:
+    """A date from the client list counts only once it is today or in the past."""
+    return date.fromisoformat(s) if s and date.fromisoformat(s) <= TODAY else None
+
+
 def money(amount: float, currency: str) -> str:
     return f"{amount:,.2f} {currency}"
 
@@ -139,6 +144,7 @@ def do_proposal(c: dict, notes: str, st: dict) -> None:
 
 
 def next_invoice_number(state: dict) -> str:
+    # Demo numbering from state.json. A real setup reads the last number from the invoicing tool.
     used = [s["invoice"]["number"] for s in state.values() if s.get("invoice")]
     return f"INV-{TODAY.year}-{len(used) + 1:03d}"
 
@@ -172,8 +178,8 @@ def do_onboarding(c: dict, notes: str, st: dict, state: dict) -> None:
     signed = date.fromisoformat(c["signed_on"])
     inv = {
         "number": next_invoice_number(state),
-        "issued": signed.isoformat(),
-        "due": (signed + timedelta(days=PAYMENT_TERMS_DAYS)).isoformat(),
+        "issued": TODAY.isoformat(),
+        "due": (TODAY + timedelta(days=PAYMENT_TERMS_DAYS)).isoformat(),
         "amount": round(c["price"] * DEPOSIT, 2),
     }
     facts = (
@@ -197,9 +203,8 @@ def do_onboarding(c: dict, notes: str, st: dict, state: dict) -> None:
     write(OUT / c["id"] / "onboarding.md", "\n".join(doc))
     pdf_name = f"invoice-{inv['number']}.pdf"
     invoice_pdf(OUT / c["id"] / pdf_name, c, inv)
-    if not c["paid_on"]:  # already paid: keep the records, skip emails that would arrive late
-        draft("welcome", c, o.welcome_subject, o.welcome_body)
-        draft("invoice", c, o.invoice_subject, o.invoice_body, pdf_name)
+    draft("welcome", c, o.welcome_subject, o.welcome_body)
+    draft("invoice", c, o.invoice_subject, o.invoice_body, pdf_name)
     st["onboarded"] = TODAY.isoformat()
     st["invoice"] = inv
     st.setdefault("reminders", [])
@@ -209,7 +214,7 @@ def do_reminder(c: dict, st: dict, n: int, days: int) -> None:
     inv = st["invoice"]
     facts = (
         f"Client: {c['company']} ({c['contact']})\nInvoice: {inv['number']}, {money(inv['amount'], c['currency'])}\n"
-        f"Issued {inv['issued']}, due {inv['due']}, unpaid after {days} days.\nThis is reminder number {n}."
+        f"Issued {inv['issued']}, due {inv['due']}, still unpaid {days} day(s) after the due date.\nThis is reminder number {n}."
     )
     e = ask(REMINDER_SYSTEM, facts, Email)
     draft(f"reminder-{n}", c, e.subject, e.body)
@@ -218,20 +223,25 @@ def do_reminder(c: dict, st: dict, n: int, days: int) -> None:
 
 def stage(c: dict, st: dict) -> tuple[str, str]:
     """Where the client is and what happens next, for the pipeline board."""
-    if c["paid_on"]:
+    if happened(c["paid_on"]):
         return "paid", f"Deposit paid on {c['paid_on']}. Next: build and deliver."
     if st.get("invoice"):
-        days = (TODAY - date.fromisoformat(st["invoice"]["issued"])).days
+        due = date.fromisoformat(st["invoice"]["due"])
         sent = len(st["reminders"])
+        if TODAY <= due:
+            return "invoiced", f"Invoice {st['invoice']['number']} due on {due.isoformat()}."
+        late = (TODAY - due).days
         if sent >= len(REMINDER_DAYS):
-            return "overdue", f"Unpaid after {days} days and {sent} reminders. Call {c['contact']}."
-        nxt = date.fromisoformat(st["invoice"]["issued"]) + timedelta(days=REMINDER_DAYS[sent])
-        return "invoiced", f"Unpaid for {days} days, {sent} reminder(s) sent. Next reminder on {nxt.isoformat()}."
-    if c["signed_on"]:
+            return "overdue", f"{late} days late and {sent} reminders sent. Call {c['contact']}."
+        nxt = due + timedelta(days=REMINDER_DAYS[sent])
+        return "overdue", f"{late} day(s) late, {sent} reminder(s) sent. Next reminder on {nxt.isoformat()}."
+    if happened(c["signed_on"]):
         return "signed", "Onboarding on the next run."
     if st.get("proposal_sent"):
         return "proposal sent", f"Waiting for {c['contact']} to sign (sent {st['proposal_sent']})."
-    return "lead", "Proposal on the next run."
+    if happened(c["met_on"]):
+        return "lead", "Proposal on the next run."
+    return "not met yet", f"First call on {c['met_on']}."
 
 
 def main() -> None:
@@ -243,9 +253,9 @@ def main() -> None:
         st = state.setdefault(c["id"], {})
         notes = (ROOT / c["notes"]).read_text(encoding="utf-8")
         actions = []
-        if not c["signed_on"] and not st.get("proposal_sent"):
+        if happened(c["met_on"]) and not happened(c["signed_on"]) and not st.get("proposal_sent"):
             actions.append("proposal")
-        if c["signed_on"] and not st.get("onboarded"):
+        if happened(c["signed_on"]) and not st.get("onboarded"):
             actions.append("onboarding + deposit invoice")
         print(f"- {c['company']}: {', '.join(actions) or 'no new document, payment check only'}")
         if DRY_RUN:
@@ -255,11 +265,11 @@ def main() -> None:
             do_proposal(c, notes, st)
         if actions and actions[-1].startswith("onboarding"):
             do_onboarding(c, notes, st, state)
-        if st.get("invoice") and not c["paid_on"]:
-            days = (TODAY - date.fromisoformat(st["invoice"]["issued"])).days
+        elif st.get("invoice") and not happened(c["paid_on"]):
+            late = (TODAY - date.fromisoformat(st["invoice"]["due"])).days
             n = len(st["reminders"])
-            if n < len(REMINDER_DAYS) and days >= REMINDER_DAYS[n]:
-                do_reminder(c, st, n + 1, days)
+            if n < len(REMINDER_DAYS) and late >= REMINDER_DAYS[n]:
+                do_reminder(c, st, n + 1, late)
 
     if DRY_RUN:
         print("DRY RUN: no API key, nothing written.")

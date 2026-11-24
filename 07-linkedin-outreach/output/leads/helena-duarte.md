@@ -3,11 +3,11 @@
 **Status:** not interested
 
 ### 2026-11-05 · profile view · done · linkedin
+### 2026-11-06 · connected · accepted
 ### 2026-11-06 · connection request · done · linkedin
 
 Hi Helena, I read your post about the October DMs. Between fittings and the workshop, messages pile up fast. I help women who run small businesses keep their inbox under control. Would be happy to connect.
 
-### 2026-11-06 · connected · accepted
 ### 2026-11-08 · message · done · linkedin
 
 Thanks for connecting, Helena! For appointment based businesses, most DMs ask the same 3 things: prices, availability and how fittings work. An automatic first answer with your booking link can catch those before they get lost. Does that sound like your inbox?

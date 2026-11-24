@@ -10,7 +10,11 @@
     "started_on": "2026-11-10",
     "connected_on": "2026-11-12",
     "replies": [
-      {"on": "2026-11-14", "channel": "linkedin", "text": "Haha yes, Sundays are quotes day here. How would that work for a business like mine? Do you have time for a call next week?"}
+      {
+        "on": "2026-11-14",
+        "channel": "linkedin",
+        "text": "Haha yes, Sundays are quotes day here. How would that work for a business like mine? Do you have time for a call next week?"
+      }
     ]
   },
   {
@@ -24,7 +28,11 @@
     "started_on": "2026-11-05",
     "connected_on": "2026-11-06",
     "replies": [
-      {"on": "2026-11-13", "channel": "email", "text": "Thank you, but we just hired an assistant to handle messages. Not looking for anything right now."}
+      {
+        "on": "2026-11-13",
+        "channel": "email",
+        "text": "Thank you, but we just hired an assistant to handle messages. Not looking for anything right now."
+      }
     ]
   },
   {
@@ -38,7 +46,11 @@
     "started_on": "2026-11-01",
     "connected_on": "2026-11-03",
     "replies": [
-      {"on": "2026-11-16", "channel": "linkedin", "text": "Interesting. We do everything in Notion today. Would that still work, or do we need to change tools?"}
+      {
+        "on": "2026-11-16",
+        "channel": "linkedin",
+        "text": "Interesting. We do everything in Notion today. Would that still work, or do we need to change tools?"
+      }
     ]
   },
   {
@@ -57,8 +69,8 @@
     "id": "joana-pires",
     "name": "Joana Pires",
     "title": "Photographer",
-    "company": "Joana Pires Photography",
-    "email": "hello@joanapires.example",
+    "company": "Lumen Photo Studio",
+    "email": "hello@lumenphoto.example",
     "about": "Wedding and family photographer, works alone.",
     "recent_post": "Delivered 4 galleries this week. Now the part nobody sees: invoices, contracts for next year and 30 unanswered emails.",
     "started_on": "2026-11-12",

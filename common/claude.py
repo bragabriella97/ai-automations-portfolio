@@ -32,7 +32,10 @@ def ask(system: str, content: str | list, schema: type[T]) -> T:
         raise RuntimeError("Claude declined this request")
     if response.stop_reason == "max_tokens":
         raise RuntimeError("Answer was cut off, raise max_tokens")
-    return response.parsed_output
+    out = response.parsed_output
+    if out is None:
+        raise RuntimeError("No structured answer returned")
+    return out
 
 
 def run_stamp() -> str:
